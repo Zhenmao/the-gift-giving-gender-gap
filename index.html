@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gift-Giving Gender Gap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <div>
+          <h1>The gift-giving gender gap</h1>
+          <p
+            >This is a remake of three different bar charts from YouGov
+            <a
+              href="https://yougov.com/en-us/articles/54532-how-men-and-women-in-the-us-differ-in-gift-giving-habits"
+              target="_blank"
+              >How men and women in the U.S. differ in gift-giving habits</a
+            >. This post shows that a gap chart (also known as dumbbell chart,
+            barbell chart, or connected dot plot) is a better alternative to
+            emphasize the difference between groups.</p
+          >
+        </div>
+
+        <section>
+          <figure>
+            <figcaption> Original: Bar Chart </figcaption>
+            <div>
+              <h2>
+                In the U.S., women outpace men in gift-giving across most
+                relationships
+              </h2>
+              <p>
+                In general, for which persons, if any, from the below categories
+                do you buy gifts? Please select all that apply. (% of U.S.
+                adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="relationshipsOriginal"></svg>
+            </div>
+          </figure>
+
+          <figure>
+            <figcaption> Alternative: Gap Chart </figcaption>
+            <div>
+              <h2>
+                In the U.S., women outpace men in gift-giving across most
+                relationships
+              </h2>
+              <p>
+                In general, for which persons, if any, from the below categories
+                do you buy gifts? Please select all that apply. (% of U.S.
+                adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="relationshipsAlternative"></svg>
+            </div>
+          </figure>
+        </section>
+
+        <section>
+          <figure>
+            <figcaption> Original: Grouped Bar Chart </figcaption>
+            <div>
+              <h2>
+                Occasion, closeness, and budget are the top drivers of
+                gift-buying in the U.S.
+              </h2>
+              <p>
+                Which, if any, of the following factors influence you when
+                deciding what gifts to buy? Please select all that apply. (% of
+                U.S. adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="factorsOriginal"></svg>
+            </div>
+          </figure>
+
+          <figure>
+            <figcaption> Alternative: Gap Chart </figcaption>
+            <div>
+              <h2>
+                Occasion, closeness, and budget are the top drivers of
+                gift-buying in the U.S.
+              </h2>
+              <p>
+                Which, if any, of the following factors influence you when
+                deciding what gifts to buy? Please select all that apply. (% of
+                U.S. adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="factorsAlternative"></svg>
+            </div>
+          </figure>
+        </section>
+
+        <section>
+          <figure>
+            <figcaption> Original: Butterfly Bar Chart </figcaption>
+            <div>
+              <h2>
+                American men are more likely than women to buy electronics as
+                gifts
+              </h2>
+              <p>
+                Which, if any, of the following types of gifts do you generally
+                buy? Please select all that apply. (% of U.S. adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="square"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="giftsOriginal"></svg>
+            </div>
+          </figure>
+
+          <figure>
+            <figcaption> Alternative: Gap Chart </figcaption>
+            <div>
+              <h2>
+                American men are more likely than women to buy electronics as
+                gifts
+              </h2>
+              <p>
+                Which, if any, of the following types of gifts do you generally
+                buy? Please select all that apply. (% of U.S. adults)
+              </p>
+              <div class="swatches">
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-men)"
+                  >Men</div
+                >
+                <div
+                  class="swatch"
+                  data-shape="circle"
+                  style="--color: var(--color-women)"
+                  >Women</div
+                >
+              </div>
+              <svg id="giftsAlternative"></svg>
+            </div>
+          </figure>
+        </section>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
